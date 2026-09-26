@@ -22,7 +22,9 @@ function UserDisplay() {
       <p>Welcome, {user.name}</p>
       <p>{user.email}</p>
 
-      <button onClick={logout}>Logout</button>
+      <button onClick={logout}>
+        Logout
+      </button>
     </div>
   );
 }
