@@ -5,7 +5,7 @@ export function useLanguage() {
   const context = useContext(LanguageContext);
 
   if (!context) {
-    throw new Error ('Use theme must be used inside ThemeProvider');
+    throw new Error ('useLanguage must be used inside LanguageProvider');
   }
   return context;
 }

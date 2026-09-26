@@ -5,6 +5,8 @@ import ThemeDisplay from "@/components/ThemeDisplay";
 import UserDisplay from "@/components/UserDisplay";
 import { ThemeProvider } from "@/context/ThemeContext";
 import UserProvider from "@/context/UserContext";
+import LanguageDisplay from "@/components/LanguageDisplay";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export default function Home() {
   return (
@@ -20,6 +22,9 @@ export default function Home() {
         <UserProvider>
           <UserDisplay />
         </UserProvider>
+        <LanguageProvider>
+          <LanguageDisplay />
+        </LanguageProvider>
       </div>
     </>
   );
